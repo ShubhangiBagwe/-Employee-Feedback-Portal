@@ -1,12 +1,35 @@
-# React + Vite
+# Employee Feedback Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to Run
 
-Currently, two official plugins are available:
+1. Clone the repo
+2. Navigate to `/backend` and run:
+   - `npm install`
+   - Add `.env` with `MONGO_URI=your_mongo_connection`
+   - `node app.js`
+3. Navigate to `/frontend` and run:
+   - `npm install`
+   - `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## API Endpoints
 
-## Expanding the ESLint configuration
+- `POST /feedback`: Submit feedback
+- `GET /feedback`: Get all feedback
+- `GET /feedback?category=xyz`: Get feedback by category
+- `PATCH /feedback/:id/reviewed`: Mark feedback reviewed
+- `DELETE /feedback/:id`: Delete feedback
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Assumptions
+
+- No authentication for admin/employee
+- Data is stored anonymously
+- Admin UI is not protected 
+
+## Status
+
+- Submit Feedback
+- Filter Feedback
+- Mark as Reviewed
+- Delete Feedback
+- Basic Styling
+
