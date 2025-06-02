@@ -34,7 +34,7 @@ const FeedbackAdmin = () => {
 
   return (
     <div className="p-6 mt-10 max-w-[85rem] mx-auto bg-white shadow-md rounded-lg transition-all hover:shadow-lg">
-      <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">Admin Feedback Viewer</h2>
+      <h2 className="heading-text">Admin Feedback Viewer</h2>
 
       <div className="flex justify-center mb-6">
         <select

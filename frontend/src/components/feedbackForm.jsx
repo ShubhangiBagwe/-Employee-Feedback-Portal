@@ -34,7 +34,7 @@ const FeedbackForm = () => {
       <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800">Submit Anonymous Feedback</h2>
 
       <textarea
-        className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+        className="input-text"
         placeholder="Enter your feedback here..."
         required
         value={text}
@@ -55,7 +55,7 @@ const FeedbackForm = () => {
 
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 active:bg-blue-800 transition duration-200 font-medium"
+        className="submit-btn"
       >
         Submit
       </button>
